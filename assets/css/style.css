@@ -1,0 +1,169 @@
+* {
+  font-family: 'Montserrat';
+}
+
+.benefits {
+  padding: 0px 40px;
+  background-color: #f2f2f2 !important;
+  height: 50px;
+}
+
+.benefits span {
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 6px;
+}
+
+.site-wide-deals {
+  padding: 30px 70px;
+  background-color: #ffffff !important;
+}
+
+.site-wide-deals .price {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.site-wide-deals .off {
+  padding-left: 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.site-wide-deals .others {
+  margin-left: -8px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.site-wide-deals button {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.vip-exclusive {
+  height: 75px;
+  background: url('../img/bg.png') no-repeat;
+  background-size: cover;
+}
+
+.vip-exclusive div:nth-child(1) span {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.vip-exclusive div:nth-child(2) span {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.vip-exclusive button,
+.insta button {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.trending .heading,
+.recently-bought .heading,
+.insta .heading {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.trending .paragraph,
+.insta .paragraph {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.trending .category {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.trending .hashtags {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recently-bought .card-item {
+  width: 225px;
+  height: 300px;
+}
+
+.recently-bought .others {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.recently-bought .price .original {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recently-bought .price .current {
+  color: #C1272D;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.newsletter {
+  padding: 0px 60px;
+  margin-top: 50px;
+  height: 75px;
+  background: #000000;
+}
+
+.newsletter .exclusive-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.newsletter .exclusive-input {
+  width: 354px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.newsletter .exclusive-input input {
+  background-color: #f2f2f2;
+}
+
+.newsletter .exclusive-input .input-group-text {
+  background-color: #ffffff;
+}
+
+footer .footer-nav {
+  font-size: 11px;
+}
+
+footer .copyright {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.cart-overview {
+  width: 300px;
+  margin-top: 0.4rem !important;
+}
+
+.cart-overview .cart-items {
+  max-height: 450px !important;
+  overflow-y: auto;
+}
+
+.shopping-cart .cart-items {
+  /* max-height: 650px !important; */
+  overflow-y: auto;
+}

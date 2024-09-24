@@ -1,14 +1,480 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>E-Commerce</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-  <script src='script.js'></script>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Threaded | Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="assets/css/mdb.min.css" rel="stylesheet" />
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg bg-white shadow-1">
+        <!-- Left Navbar -->
+        <div class="container-fluid justify-content-between">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="fw-bold">WOMEN</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>PLUS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>MEN</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>ACCESSORIES</span>
+              </a>
+            </li>
+          </ul>
+          
+          <!-- Center Navbar (Logo) -->
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="assets/svg/logo.svg" alt="logo"/>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Right Navbar -->
+          <div>
+            <ul class="navbar-nav d-flex flex-row">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="assets/svg/user.svg" alt="user"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <!-- Cart overview -->
+                <li class="nav-item dropdown cart-nav-item">
+                  <a class="nav-link text-light dropdown-toggle hidden-arrow my-0" title="Cart" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/svg/shopping-bag.svg" alt="cart"/>
+                    <span class="badge rounded-pill badge-notification bg-danger d-none">0</span>
+                  </a>
+                  <ul class="dropdown-menu cart-overview rounded-0 shadow-2-strong" aria-labelledby="navbarDropdown">
+                    <!-- Cart Items -->
+                    <div class="cart-items"></div>
+                    <li class="go-to-checkout">
+                      <div class="d-flex justify-content-between px-3 fw-bolder">
+                        <div class="my-bag">
+                          <u>My Bag (<span class="count">0</span>)</u>
+                        </div>
+                        <div>
+                          <span class="total">$0</span>
+                        </div>
+                      </div>
+                      <a class="dropdown-item text-center" href="cart.html">
+                        <button class="btn btn-black rounded-0">BEGIN CHECKOUT</button>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="assets/svg/heart.svg" alt="heart"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="assets/svg/support.svg" alt="support"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="assets/svg/search.svg" alt="search"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center border border-1 rounded-pill py-1 px-2 mt-1" href="#">
+                  <img src="assets/svg/us-flag.svg" alt="us-flag"/>
+                  <span class="ms-1">USD $ <img src="assets/svg/down-outline.svg" alt="down"/></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br><br>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Benefits -->
+      <div class="benefits container-fluid justify-content-between align-items-center d-flex flex-row mt-2">
+        <div class="">
+          <img src="assets/svg/crown.svg" alt="user"/>
+          <span>Exclusive Deals for VIP 2 and up!</span>
+        </div>
+        <div>
+          <img src="assets/svg/star.svg" alt="user"/>
+          <span>Weekly New Arrivals</span>
+        </div>
+        <div>
+          <img src="assets/svg/truck-delivery.svg" alt="user"/>
+          <span>Free Shipping On Orders Over $100</span>
+        </div>
+        <div>
+          <img src="assets/svg/map-pin.svg" alt="user"/>
+          <span>Track Your Order</span>
+        </div>
+        <div>
+          <img src="assets/svg/purchase-tag.svg" alt="user"/>
+          <span>10% Off On Your First Order!</span>
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <div class="hero">
+        <img src="assets/img/hero.png" width="100%">
+      </div>
+
+      <!-- Site-wide deals -->
+      <div class="site-wide-deals container-fluid justify-content-between align-items-center d-flex flex-row">
+        <div>
+          <div class="d-flex flex-row align-items-center mb-n2">
+            <span class="price">$5</span>
+            <span class="off">OFF</span>
+          </div>
+          <span class="others">ON ORDERS ABOVE $50</span>
+        </div>
+        <div>
+          <div class="d-flex flex-row align-items-center mb-n2">
+            <span class="price">$15</span>
+            <span class="off">OFF</span>
+          </div>
+          <span class="others">ON ORDERS ABOVE $75</span>
+        </div>
+        <div>
+          <div class="d-flex flex-row align-items-center mb-n2">
+            <span class="price">$20</span>
+            <span class="off">OFF</span>
+          </div>
+          <span class="others">ON ORDERS ABOVE $150</span>
+        </div>
+        <div>
+          <div class="d-flex flex-row align-items-center mb-n2">
+            <span class="price">$30</span>
+            <span class="off">OFF</span>
+          </div>
+          <span class="others">ON ORDERS ABOVE $200</span>
+        </div>
+        <div>
+          <button class="btn btn-black rounded-0">CHECK OUT ALL SITE-WIDE DEALS</button>
+        </div>
+      </div>
+
+      <!-- VIP Exclusive -->
+      <div class="vip-exclusive container-fluid justify-content-around align-items-center d-flex flex-row">
+        <div>
+          <span>BLACK FRIDAY EXCLUSIVE</span>
+        </div>
+        <div>
+          <span>FREE SHIPPING ON ALL ORDERS FOR<br>VIP 2 AND UP!</span>
+        </div>
+        <div>
+          <button class="btn btn-white rounded-0">SHOP NOW</button>
+        </div>
+      </div>
+
+      <!-- Trending -->
+      <div class="trending mt-5">
+        <div class="heading">Now Trending</div>
+        <div class="paragraph">See what everyone's wearing right now</div>
+
+        <div class="container p-5">
+          <div class="row">
+            <div class="col-3 mb-4">
+              <div class="card rounded-0 text-center shadow-0">
+                <div class="card-body p-0">
+                  <img src="assets/img/trending-1.png" width="225px" height="300px">
+                </div>
+                <div class="card-footer category border-0">WINTER FASHION</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card rounded-0 text-center shadow-0">
+                <div class="card-body p-0">
+                  <img src="assets/img/trending-2.png" width="225px" height="300px">
+                </div>
+                <div class="card-footer category border-0">BOOTS</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card rounded-0 text-center shadow-0">
+                <div class="card-body p-0">
+                  <img src="assets/img/trending-3.png" width="225px" height="300px">
+                </div>
+                <div class="card-footer category border-0">NIGHT OUT</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card rounded-0 text-center shadow-0">
+                <div class="card-body p-0">
+                  <img src="assets/img/trending-4.png" width="225px" height="300px">
+                </div>
+                <div class="card-footer category border-0">HOLIDAYS</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card rounded-0 text-center shadow-0">
+                <div class="card-body p-0">
+                  <img src="assets/img/trending-5.png" width="225px" height="300px">
+                </div>
+                <div class="card-footer category border-0">OUTERWEAR</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card rounded-0 text-center shadow-0">
+                <div class="card-body p-0">
+                  <img src="assets/img/trending-6.png" width="225px" height="300px">
+                </div>
+                <div class="card-footer category border-0">WHITE DRESSES</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card rounded-0 text-center shadow-0">
+                <div class="card-body p-0">
+                  <img src="assets/img/trending-7.png" width="225px" height="300px">
+                </div>
+                <div class="card-footer category border-0">SWEATERS</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card rounded-0 text-center shadow-0">
+                <div class="card-body p-0">
+                  <img src="assets/img/trending-8.png" width="225px" height="300px">
+                </div>
+                <div class="card-footer category border-0">PARTY</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid justify-content-around align-items-center d-flex flex-row mt-3 px-5 gap-0">
+            <div></div>
+            <div></div>
+            <div class="hashtags border border-dark rounded-pill ms-5 py-1 px-3">#Thanksgiving</div>
+            <div class="hashtags border border-dark rounded-pill py-1 px-3">#NewYears</div>
+            <div class="hashtags border border-dark rounded-pill py-1 px-3">#Knitted</div>
+            <div class="hashtags border border-dark rounded-pill py-1 px-3">#Pajamas</div>
+            <div class="hashtags border border-dark rounded-pill py-1 px-3">#WFH</div>
+            <div class="hashtags border border-dark rounded-pill me-5 py-1 px-3">#FallFashion</div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Arrivals -->
+      <div class="new-arrivals">
+        <img src="assets/img/new-arrivals.png" width="100%">
+      </div>
+
+      <!-- Recently Bought -->
+      <div class="recently-bought mt-5">
+        <div class="heading">Recently Bought</div>
+        <div class="container-fluid justify-content-around align-items-center d-flex flex-row mt-5">
+          <div class="card card-item">
+            <div class="card-body p-0">
+              <img src="assets/img/recently-bought-1.png" width="225px" height="300px">
+            </div>
+            <div class="card-footer border-0 p-0">
+              <span class="others">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</span>
+            </div>
+            <div class="card-footer border-0 px-0 py-2">
+              <div class="justify-content-between align-items-center d-flex flex-row">
+                <span class="price">
+                  <span class="original">$38</span>
+                </span>
+                <button class="btn btn-dark btn-sm rounded-0" onclick="addToCart(1, 'Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit', 'recently-bought-1.png', 38)">Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-item">
+            <div class="card-body p-0">
+              <img src="assets/img/recently-bought-2.png" width="225px" height="300px">
+            </div>
+            <div class="card-footer border-0 px-0">
+              <span class="others">Chevron Flap Crossbody Bag</span>
+            </div>
+            <div class="card-footer border-0 px-0 py-2">
+              <div class="justify-content-between align-items-center d-flex flex-row">
+                <span class="price">
+                  <span class="current">$5.77</span>
+                  <span class="original"><s>$7.34</s></span>
+                </span>
+                <button class="btn btn-dark btn-sm rounded-0" onclick="addToCart(2, 'Chevron Flap Crossbody Bag', 'recently-bought-2.png', 5.77)">Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-item">
+            <div class="card-body p-0">
+              <img src="assets/img/recently-bought-3.png" width="225px" height="300px">
+            </div>
+            <div class="card-footer border-0 p-0">
+              <span class="others">Manilla Tan Multi Plaid Oversized Fringe Scarf</span>
+            </div>
+            <div class="card-footer border-0 px-0 py-2">
+              <div class="justify-content-between align-items-center d-flex flex-row">
+                <span class="price">
+                  <span class="current">$29</span>
+                  <span class="original"><s>$39</s></span>
+                </span>
+                <button class="btn btn-dark btn-sm rounded-0" onclick="addToCart(3, 'Manilla Tan Multi Plaid Oversized Fringe Scarf', 'recently-bought-3.png', 29)">Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-item">
+            <div class="card-body p-0">
+              <img src="assets/img/recently-bought-4.png" width="225px" height="300px">
+            </div>
+            <div class="card-footer border-0 px-0">
+              <span class="others">Diamante Puff Sleeve Dress - Black</span>
+            </div>
+            <div class="card-footer border-0 px-0 py-2">
+              <div class="justify-content-between align-items-center d-flex flex-row">
+                <span class="price">
+                  <span class="original">$45.99</span>
+                </span>
+                <button class="btn btn-dark btn-sm rounded-0" onclick="addToCart(4, 'Diamante Puff Sleeve Dress - Black', 'recently-bought-4.png', 45.99)">Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-item">
+            <div class="card-body p-0">
+              <img src="assets/img/recently-bought-5.png" width="225px" height="300px">
+            </div>
+            <div class="card-footer border-0 p-0">
+              <span class="others">Banneth Open Front Formal Dress in Black</span>
+            </div>
+            <div class="card-footer border-0 px-0 py-2">
+              <div class="justify-content-between align-items-center d-flex flex-row">
+                <span class="price">
+                  <span class="current">$69</span>
+                  <span class="original"><s>$99.95</s></span>
+                </span>
+                <button class="btn btn-dark btn-sm rounded-0" onclick="addToCart(5, 'Banneth Open Front Formal Dress in Black', 'recently-bought-5.png', 69)">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <br><br><br><br>
+
+      <!-- Insta -->
+      <div class="insta mt-5">
+        <div class="heading">Your Next Inspo</div>
+        <div class="paragraph">Checkout who's wearing what by using #THREADEDInspo on Instagram</div>
+        <div class="container-fluid justify-content-around align-items-center d-flex flex-row mt-5">
+          <div class="card-item">
+            <img src="assets/img/insta-1.png" width="225px" height="225px">
+          </div>
+          <div class="card-item">
+            <img src="assets/img/insta-2.png" width="225px" height="225px">
+          </div>
+          <div class="card-item">
+            <img src="assets/img/insta-3.png" width="225px" height="225px">
+          </div>
+          <div class="card-item">
+            <img src="assets/img/insta-4.png" width="225px" height="225px">
+          </div>
+          <div class="card-item">
+            <img src="assets/img/insta-5.png" width="225px" height="225px">
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-black rounded-0">VIEW ALL POSTS</button>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter container-fluid justify-content-around align-items-center d-flex flex-row">
+        <div class="exclusive-title">
+          <span>SIGN UP FOR EXCLUSIVE DEALS AND UPDATES</span>
+        </div>
+        <div class="exclusive-input">
+          <div class="input-group rounded-0">
+            <input type="text" class="form-control rounded-0 border-0" placeholder="Your Email Address" />
+            <span class="input-group-text rounded-0">
+              <img src="assets/svg/right-outlined.svg" alt="right-outlined"/>
+            </span>
+          </div>
+        </div>
+       </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Footer Nav -->
+      <section class="footer-nav">
+        <div class="container ms-n1 mt-5">
+          <div class="row">
+            <div class="col-2 ms-5 me-n5">
+              <p class="fw-bolder">COMPANY INFO</p>
+              <p class="others">About THREADED</p>
+              <p class="others">Affiliate</p>
+              <p class="others">Blog</p>
+              <p class="others">Careers</p>
+            </div>
+            <div class="col-2 ms-n4 me-n5">
+              <p class="fw-bold">HELP &amp; SUPPORT</p>
+              <p class="others">FAQ</p>
+              <p class="others">Shipping</p>
+              <p class="others">Returns</p>
+              <p class="others">How To Order</p>
+              <p class="others">How To Track</p>
+            </div>
+            <div class="col-2 ms-n4 me-0">
+              <p class="fw-bold">CUSTOMER CARE</p>
+              <p class="others">Contact Us</p>
+              <p class="others">Payment Methods</p>
+            </div>
+            <div class="col-3 ms-n4 me-0">
+              <p class="fw-bold">FOLLOW US</p>
+              <div class="mt-n1">
+                <img src="assets/svg/facebook.svg" class="me-2" alt="facebook"/>
+                <img src="assets/svg/instagram.svg" class="me-2" alt="instagram"/>
+                <img src="assets/svg/twitter.svg" class="me-2" alt="twitter"/>
+                <img src="assets/svg/youtube.svg" class="me-2" alt="youtube"/>
+                <img src="assets/svg/pinterest.svg" class="me-2" alt="pinterest"/>
+                <img src="assets/svg/tiktok.svg" class="me-2" alt="tiktok"/>
+              </div>
+              <p class="fw-bold mt-3">WE ACCEPT</p>
+              <div class="mt-n1">
+                <img src="assets/img/visa.png" class="me-1" width="45px" alt="visa"/>
+                <img src="assets/img/mastercard.png" class="me-1" width="45px" alt="mastercard"/>
+                <img src="assets/img/maestro.png" class="me-1" width="45px" alt="maestro"/>
+                <img src="assets/img/amex.png" class="me-1" width="45px" alt="american express"/>
+                <img src="assets/img/paypal.png" class="me-1" width="45px" alt="paypal"/>
+              </div>
+            </div>
+        </div>
+      </div>
+      </section>
+
+      <div class="container-fluid justify-content-between align-items-center d-flex p-5">
+        <div class="copyright">
+          ©2024 THREADED All Rights Reserved.
+        </div>
+        <div class="copyright-logo">
+          <img src="assets/svg/logo.svg" alt="logo"/>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+  <script src='assets/js/script.js'></script>
 </html>
